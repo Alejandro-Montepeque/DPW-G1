@@ -1,0 +1,84 @@
+html, body {
+    height: auto;
+    min-height: 100vh;
+    overflow-y: visible;
+}
+
+/* Fondo con gradiente */
+.gradient {
+    background: linear-gradient(to top, #004AAD, #A8E6CF);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+.back-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: url('../src/background.png') center/cover no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+/* estilización del contenedor principal */
+.container {
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    overflow: visible;
+}
+
+/* Classes para estilos de cada card */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+/* Clases para estilizar Títulos dentro de cada card */
+.card h2 {
+    font-weight: bold;
+    font-style: italic;
+}
+/*Clases para justificado y espaciado de textos*/
+
+p, pre {
+    text-align: justify;
+    text-justify: inter-word;
+}
+.p1 { color: red; }
+.p2 { color: blue; }
+.p3 { color: green; }
+.p4 { color: purple; }
+.p5 { color: orange; }
+
+ul {
+    text-align: left;
+}
+.ventajas-desventajas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.ventajas, .desventajas {
+    flex: 1;
+    min-width: 200px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.text-b {
+    color: blue;
+}
